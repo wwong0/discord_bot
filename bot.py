@@ -5,12 +5,6 @@ import asyncio
 import os
 import yt_dlp
 
-
-
-
-# Discord bot token
-DISCORD_TOKEN = discord_token
-
 # Intents
 intents = discord.Intents.default()
 intents.message_content = True  # Enable the bot to read messages
@@ -112,4 +106,4 @@ async def on_message(message):
             await message.channel.send("not in vc")
 
 # Run the bot
-client.run(DISCORD_TOKEN)
+client.run(discord_token)
